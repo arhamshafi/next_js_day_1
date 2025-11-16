@@ -13,10 +13,11 @@ export default function userlayout({ children }) {
                                 <Link href={`/user/${ele === "home" ? "" : ele}`}>{ele}</Link>
                             </li>
                         ))
+
                     }
                 </ul>
                 <div className="flex justify-center items-center gap-5">
-                    <MdAdminPanelSettings className="text-white text-3xl cursor-pointer " />
+                    <Link href={"/admin"}><MdAdminPanelSettings className="text-white text-3xl cursor-pointer " /> </Link>
                 </div>
             </nav>
             <main className="select-none" > {children} </main>
